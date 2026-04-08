@@ -1,133 +1,112 @@
 # শব্দকল্পদ্রুম · Shobdokolpodroom ✦
-### A personal German vocabulary flashcard app
 
-> *"শব্দকল্পদ্রুম" (Shobdokolpodroom) — the wish-fulfilling tree of words.*
-> Named after the beloved nonsense poem by **Sukumar Ray** (1887–1923), Bengali poet and father of absurdist literature.
+**A personal German vocabulary flashcard app — built from 8 years of living in Germany.**
 
----
-
-## What is this?
-
-A self-hosted flashcard web app for learning German — built around **words you collect yourself**, not a generic word list.
-
-The idea: every word in this app was encountered in real life — in conversations, audiobooks, lectures, articles, professional meetings. That personal context makes them stick far better than any textbook list.
-
-This project was built by **Abhipshito Bhattacharya**, a PhD researcher in wireless communications at RWTH Aachen, over 8 years of living in Germany.
+🌐 **Live app: https://shobdokolpodroom-production.up.railway.app**
+*(Works on any browser — iPhone, Mac, anything. No install needed.)*
 
 ---
 
-## Features
+## The idea
 
-- 🃏 **Flashcard practice** — flip, mark known/unknown, track session progress
-- ✚ **Add words on the fly** — from the app itself, saved permanently to `words.json`
-- 📚 **Searchable word list** — filter by source (Notion / ChatGPT / your own)
-- 📱 **Works on iPhone** — open in Safari, no app install needed
-- 🗂️ **You own your data** — everything lives in a plain `words.json` file you can edit directly
+Generic word lists don't stick. Anki decks built from textbooks don't stick.
 
----
+But the word your German colleague used in a meeting, which you looked up on the U-Bahn home — that one sticks forever.
 
-## Make it yours — The Philosophy
+Every word in this app was collected from real life: conversations, audiobooks, university lectures, bureaucratic letters, satellite communication conferences. The examples aren't made up either — they come from the exact moments the words were first encountered.
 
-The real power of this app is that **you bring your own words**.
-
-Every word you encounter — in a podcast, a meeting, a Harry Potter audiobook, a bureaucratic letter — belongs in your Wortschatz. This app is just the vessel.
-
-**How to collect words for your own version:**
-1. Keep a running note (Notion, Apple Notes, ChatGPT thread — anything works)
-2. When you have a batch, format them as: `Wort | Bedeutung | Beispielsatz`
-3. Add them to `words.json` manually, or use the in-app **✚ Neu** form
+This is a personal Wortschatz, built word by word over 8 years in Germany. The app is just the vessel.
 
 ---
 
-## Getting Started
+## The name
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) v18 or higher
+*Shobdokolpodroom* (শব্দকল্পদ্রুম) is a nonsense poem by the Bengali poet **Sukumar Ray** (1887–1923). The word means "the wish-fulfilling tree of words." A fitting name for a vocabulary garden.
 
-### Installation
+---
+
+## Make it yours
+
+Fork this repo, delete the words, fill it with your own. Learning French? Japanese? Living in a foreign country and collecting words along the way? Your Shobdokolpodroom is waiting.
+
+You can add words directly from the app on your phone, in the moment you hear them.
+
+---
+
+## Getting started
+
+**Prerequisites:** [Node.js](https://nodejs.org/) v18 or higher
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/shobdokolpodroom.git
+git clone https://github.com/Avps1/shobdokolpodroom.git
 cd shobdokolpodroom
 npm install
-```
-
-### Run locally
-
-```bash
 node server.js
 ```
 
 Open `http://localhost:3000` in your browser.
 
-### Access on iPhone (same WiFi)
-
-```bash
-ipconfig getifaddr en0   # find your Mac's local IP
-```
-
-Then open `http://<your-ip>:3000` in iPhone Safari.
-
-### Deploy (permanent URL, works anywhere)
-
-Using [Railway](https://railway.app/) (free tier):
+**Deploy to the web (free, works on iPhone anywhere):**
 
 ```bash
 npm install -g @railway/cli
 railway login
 railway init
 railway up
-railway open
+railway domain
+```
+
+Bookmark that URL on your iPhone. Add it to your home screen from Safari — it works like a native app.
+
+---
+
+## Adding words
+
+**From the app:** tap ✚ Neu, fill in the word, meaning and an example sentence, tap save. Done — works on iPhone too.
+
+**Directly in `words.json`:** open the file in any text editor and add an entry:
+
+```json
+{
+  "word": "Gelassenheit",
+  "meaning": "Inner peace / Composure",
+  "example": "Ich sehne mich nach mehr Gelassenheit.",
+  "source": "custom"
+}
+```
+
+Then push to redeploy:
+
+```bash
+git add words.json
+git commit -m "Add new words"
+git push
+railway up
 ```
 
 ---
 
-## Project Structure
+## Project structure
 
 ```
 shobdokolpodroom/
-├── server.js          ← Express server (API + static files)
-├── words.json         ← Your vocabulary database (edit freely!)
+├── server.js        ← Express server
+├── words.json       ← Your vocabulary (edit freely)
 ├── public/
-│   └── index.html     ← Full frontend (single file, no build step)
+│   └── index.html   ← Full frontend, one file
 └── package.json
 ```
 
 ---
 
-## words.json format
-
-```json
-[
-  {
-    "word": "Gelassenheit",
-    "meaning": "Inner peace / Composure",
-    "example": "Ich sehne mich nach mehr Gelassenheit.",
-    "source": "notion"
-  }
-]
-```
-
-`source` can be `"notion"`, `"chatgpt"`, or `"custom"`. Used for filtering in the app.
-
----
-
 ## API
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
+| Method | Endpoint | What it does |
+|--------|----------|--------------|
 | GET | `/api/words` | Get all words |
-| POST | `/api/words` | Add a new word `{ word, meaning, example }` |
-| DELETE | `/api/words/:index` | Delete word by index |
+| POST | `/api/words` | Add a word `{ word, meaning, example }` |
+| DELETE | `/api/words/:index` | Delete by index |
 
 ---
 
-## Tribute
-
-This app is named after **"শব্দকল্পদ্রুম"** (*Shobdokolpodroom*), a poem by Sukumar Ray — the wish-fulfilling tree of words. A fitting name for a personal vocabulary garden built word by word, over years of living in a foreign land.
-
----
-
-## License
-
-MIT — fork it, clone it, fill it with your own words. Das ist der Sinn der Sache. 🌱
+MIT License — fork it, fill it with your own words. Das ist der Sinn der Sache. 🌱
