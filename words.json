@@ -1,0 +1,1196 @@
+[
+  {
+    "word": "Schicksal",
+    "meaning": "Destiny / Fate",
+    "example": "Das war sein Schicksal.",
+    "source": "notion"
+  },
+  {
+    "word": "Vorbeugung",
+    "meaning": "Prevention",
+    "example": "Vorbeugung ist besser als Heilung.",
+    "source": "notion"
+  },
+  {
+    "word": "Spielzeug",
+    "meaning": "Plaything / Toy",
+    "example": "Das Kind spielt mit seinem Spielzeug.",
+    "source": "notion"
+  },
+  {
+    "word": "Schlagzeug",
+    "meaning": "Drums (lit. beating-thing)",
+    "example": "Er spielt Schlagzeug in einer Band.",
+    "source": "notion"
+  },
+  {
+    "word": "überspringen",
+    "meaning": "To skip",
+    "example": "Wir können diesen Schritt überspringen.",
+    "source": "notion"
+  },
+  {
+    "word": "Ursprung",
+    "meaning": "Origin",
+    "example": "Was ist der Ursprung dieses Wortes?",
+    "source": "notion"
+  },
+  {
+    "word": "Somit",
+    "meaning": "Therefore / Thus",
+    "example": "Somit ist das Problem gelöst.",
+    "source": "notion"
+  },
+  {
+    "word": "Muster",
+    "meaning": "Pattern",
+    "example": "Das Kleid hat ein schönes Muster.",
+    "source": "notion"
+  },
+  {
+    "word": "Herrlich",
+    "meaning": "Magnificent / Splendid",
+    "example": "Das Wetter heute ist herrlich!",
+    "source": "notion"
+  },
+  {
+    "word": "Dämlich",
+    "meaning": "Stupid / Dumb (from Dämmerung = twilight)",
+    "example": "So ein dämliches Beispiel!",
+    "source": "notion"
+  },
+  {
+    "word": "Tadellos",
+    "meaning": "Impeccable / Flawless",
+    "example": "Seine Arbeit war tadellos.",
+    "source": "notion"
+  },
+  {
+    "word": "Ersparnisse",
+    "meaning": "Savings",
+    "example": "Er hat seine Ersparnisse aufgebraucht.",
+    "source": "notion"
+  },
+  {
+    "word": "Makler",
+    "meaning": "Broker / Real estate agent",
+    "example": "Der Makler zeigte uns die Wohnung.",
+    "source": "notion"
+  },
+  {
+    "word": "Erbe",
+    "meaning": "Heir / Inheritance",
+    "example": "Er ist der einzige Erbe.",
+    "source": "notion"
+  },
+  {
+    "word": "Erobern",
+    "meaning": "To conquer",
+    "example": "Napoleon wollte Europa erobern.",
+    "source": "notion"
+  },
+  {
+    "word": "Verwandt",
+    "meaning": "Related / Relative (kin)",
+    "example": "Wir sind verwandt.",
+    "source": "notion"
+  },
+  {
+    "word": "Vergütung",
+    "meaning": "Remuneration / Income",
+    "example": "Die Vergütung war sehr gut.",
+    "source": "notion"
+  },
+  {
+    "word": "Betrug",
+    "meaning": "Fraud / Scam",
+    "example": "Das war ein klarer Betrug.",
+    "source": "notion"
+  },
+  {
+    "word": "Verklagen",
+    "meaning": "To sue",
+    "example": "Er will die Firma verklagen.",
+    "source": "notion"
+  },
+  {
+    "word": "Anwalt",
+    "meaning": "Attorney / Lawyer",
+    "example": "Ich brauche einen Anwalt.",
+    "source": "notion"
+  },
+  {
+    "word": "Einnahme",
+    "meaning": "Income / Revenue",
+    "example": "Die Einnahmen sind gestiegen.",
+    "source": "notion"
+  },
+  {
+    "word": "Ausgabe",
+    "meaning": "Expenditure / Expense",
+    "example": "Die Ausgaben müssen reduziert werden.",
+    "source": "notion"
+  },
+  {
+    "word": "Eigentum",
+    "meaning": "Property",
+    "example": "Das ist mein Eigentum.",
+    "source": "notion"
+  },
+  {
+    "word": "Zuverlässig",
+    "meaning": "Reliable",
+    "example": "Er ist ein zuverlässiger Mitarbeiter.",
+    "source": "notion"
+  },
+  {
+    "word": "Nachhaltig",
+    "meaning": "Sustainable",
+    "example": "Wir brauchen nachhaltige Lösungen.",
+    "source": "notion"
+  },
+  {
+    "word": "Strahlen",
+    "meaning": "To radiate / shine",
+    "example": "Die Sonne strahlt heute.",
+    "source": "notion"
+  },
+  {
+    "word": "Mühe",
+    "meaning": "Effort",
+    "example": "Er hat viel Mühe in die Arbeit gesteckt.",
+    "source": "notion"
+  },
+  {
+    "word": "Überzeugen",
+    "meaning": "To convince",
+    "example": "Ich muss meinen Chef überzeugen.",
+    "source": "notion"
+  },
+  {
+    "word": "Damals",
+    "meaning": "Back then / At that time",
+    "example": "Damals waren lange Röcke in Mode.",
+    "source": "notion"
+  },
+  {
+    "word": "Sparen",
+    "meaning": "To save (money)",
+    "example": "Ich spare Geld für den Urlaub. Sparkonto = savings account.",
+    "source": "notion"
+  },
+  {
+    "word": "Sperren",
+    "meaning": "To close / lock / block",
+    "example": "Die Straße ist gesperrt.",
+    "source": "notion"
+  },
+  {
+    "word": "Spenden",
+    "meaning": "To donate",
+    "example": "Er spendet jeden Monat.",
+    "source": "notion"
+  },
+  {
+    "word": "Leidenschaft",
+    "meaning": "Passion (lit. suffering + joy)",
+    "example": "Musik ist meine Leidenschaft.",
+    "source": "notion"
+  },
+  {
+    "word": "Eigenschaft",
+    "meaning": "Property / Characteristic (cf. Eigenwerte)",
+    "example": "Das ist eine wichtige Eigenschaft.",
+    "source": "notion"
+  },
+  {
+    "word": "Kratzen",
+    "meaning": "To scratch",
+    "example": "Katzen kratzen — Cats scratch.",
+    "source": "notion"
+  },
+  {
+    "word": "Jedoch",
+    "meaning": "However / Nevertheless (sexier 'aber')",
+    "example": "Das Verfahren ist jedoch nicht relevant.",
+    "source": "notion"
+  },
+  {
+    "word": "Gelassenheit",
+    "meaning": "Inner peace / Composure / Calmness",
+    "example": "Ich sehne mich nach mehr Gelassenheit.",
+    "source": "notion"
+  },
+  {
+    "word": "Sehnen (sich)",
+    "meaning": "To yearn / crave (reflexive)",
+    "example": "Ich sehne mich nach Gelassenheit.",
+    "source": "notion"
+  },
+  {
+    "word": "Demütig",
+    "meaning": "Humble",
+    "example": "Er ist sehr demütig trotz seines Erfolgs.",
+    "source": "notion"
+  },
+  {
+    "word": "Bescheiden",
+    "meaning": "Modest / Humble",
+    "example": "Er lebt sehr bescheiden.",
+    "source": "notion"
+  },
+  {
+    "word": "Umsatz",
+    "meaning": "Revenue / Turnover",
+    "example": "Umsatz ≠ Gewinn (Revenue ≠ Profit).",
+    "source": "notion"
+  },
+  {
+    "word": "Gewinn",
+    "meaning": "Profit",
+    "example": "Umsatz = Revenue, Gewinn = Profit.",
+    "source": "notion"
+  },
+  {
+    "word": "Rendite",
+    "meaning": "Return / Yield",
+    "example": "Die Rendite dieser Anlage ist gut.",
+    "source": "notion"
+  },
+  {
+    "word": "Geizig",
+    "meaning": "Greedy / Stingy",
+    "example": "Er ist sehr geizig.",
+    "source": "notion"
+  },
+  {
+    "word": "Flüchtigkeitsfehler",
+    "meaning": "Careless mistake / Slip",
+    "example": "Das war nur ein Flüchtigkeitsfehler.",
+    "source": "notion"
+  },
+  {
+    "word": "Einwände",
+    "meaning": "Objections",
+    "example": "Ich liebe dich — Einwände? Oh nein!",
+    "source": "notion"
+  },
+  {
+    "word": "Abschreckung",
+    "meaning": "Deterrence",
+    "example": "Abschreckungsfähigkeit ist wichtig.",
+    "source": "notion"
+  },
+  {
+    "word": "Dauerhaft",
+    "meaning": "Permanent / Lasting",
+    "example": "Das muss eine dauerhafte Lösung sein.",
+    "source": "notion"
+  },
+  {
+    "word": "Aufklärung",
+    "meaning": "Enlightenment / Clarification",
+    "example": "Die Aufklärung war eine wichtige Epoche.",
+    "source": "notion"
+  },
+  {
+    "word": "Grundsätzlich",
+    "meaning": "Fundamental / In principle",
+    "example": "Grundsätzlich bin ich damit einverstanden.",
+    "source": "notion"
+  },
+  {
+    "word": "Sicherheit",
+    "meaning": "Safety / Security",
+    "example": "Sicherheit hat oberste Priorität.",
+    "source": "notion"
+  },
+  {
+    "word": "Steuerung",
+    "meaning": "Control / Management",
+    "example": "Steuerung der Satelliten.",
+    "source": "notion"
+  },
+  {
+    "word": "Ausprägung",
+    "meaning": "Characteristic / Expression",
+    "example": "Das ist eine besondere Ausprägung.",
+    "source": "notion"
+  },
+  {
+    "word": "Unterstreichen",
+    "meaning": "To underline / emphasize",
+    "example": "Er unterstrich die wichtigsten Punkte.",
+    "source": "notion"
+  },
+  {
+    "word": "Anmerkungen",
+    "meaning": "Notes / Remarks",
+    "example": "Haben Sie Anmerkungen dazu?",
+    "source": "notion"
+  },
+  {
+    "word": "Knapp",
+    "meaning": "Barely / Concise / Scarce",
+    "example": "Die Zeit ist knapp.",
+    "source": "notion"
+  },
+  {
+    "word": "Überleitung",
+    "meaning": "Transition",
+    "example": "Er machte eine gute Überleitung.",
+    "source": "notion"
+  },
+  {
+    "word": "Tarnung",
+    "meaning": "Camouflage / Concealment",
+    "example": "Tarnung ist wichtig im Militär.",
+    "source": "notion"
+  },
+  {
+    "word": "Einsatz",
+    "meaning": "Mission / Deployment",
+    "example": "Der Einsatz war erfolgreich.",
+    "source": "notion"
+  },
+  {
+    "word": "Ansatz",
+    "meaning": "Approach",
+    "example": "Hat Ihre Organisation einen bevorzugten Ansatz?",
+    "source": "notion"
+  },
+  {
+    "word": "Betrachten",
+    "meaning": "To consider / observe",
+    "example": "Ich betrachte ihn als guten Freund.",
+    "source": "notion"
+  },
+  {
+    "word": "Anforderungen",
+    "meaning": "Requirements",
+    "example": "Die operationellen Anforderungen müssen erfüllt werden.",
+    "source": "notion"
+  },
+  {
+    "word": "Beschaffung",
+    "meaning": "Procurement",
+    "example": "Beschaffung und Betrieb von Satkom-Terminals.",
+    "source": "notion"
+  },
+  {
+    "word": "Abstimmung",
+    "meaning": "Coordination / Vote",
+    "example": "Abstimmung auf Dezernatsebene.",
+    "source": "notion"
+  },
+  {
+    "word": "Schnittstelle",
+    "meaning": "Interface",
+    "example": "Die neue Schnittstelle ist sehr intuitiv.",
+    "source": "notion"
+  },
+  {
+    "word": "Anpassung",
+    "meaning": "Adjustment / Adaptation",
+    "example": "Anpassungsbedarfe gibt es ggf.",
+    "source": "notion"
+  },
+  {
+    "word": "Funkloch",
+    "meaning": "Dead zone / radio silence point",
+    "example": "Einsatz auch in Funklöchern.",
+    "source": "notion"
+  },
+  {
+    "word": "Tauglichkeit",
+    "meaning": "Suitability / Fitness",
+    "example": "Tauglichkeit von dynamic allocation fraglich.",
+    "source": "notion"
+  },
+  {
+    "word": "Widerspruch",
+    "meaning": "Contradiction",
+    "example": "Die Aussage war voller Widersprüche.",
+    "source": "notion"
+  },
+  {
+    "word": "Nachwuchs",
+    "meaning": "Offspring / Young talent",
+    "example": "Nachwuchsförderung der UniBw.",
+    "source": "notion"
+  },
+  {
+    "word": "Eifersüchtig (auf)",
+    "meaning": "Jealous of (romantic)",
+    "example": "Eifersüchtig auf meine Ex — like Lennon's Jealous Guy.",
+    "source": "notion"
+  },
+  {
+    "word": "Stichprobe",
+    "meaning": "Sample",
+    "example": "Eine Stichprobe der Daten wurde analysiert.",
+    "source": "notion"
+  },
+  {
+    "word": "Frontalzusammenstoß",
+    "meaning": "Head-on collision",
+    "example": "Angst vor einem Frontalzusammenstoß.",
+    "source": "notion"
+  },
+  {
+    "word": "Vorfreude",
+    "meaning": "Anticipation / Eager expectation",
+    "example": "Die Vorfreude auf den Urlaub ist riesig.",
+    "source": "notion"
+  },
+  {
+    "word": "Merkwürdig",
+    "meaning": "Strange / Peculiar",
+    "example": "Das ist sehr merkwürdig.",
+    "source": "notion"
+  },
+  {
+    "word": "Schlachtfeld",
+    "meaning": "Battlefield",
+    "example": "Das Schlachtfeld war verwüstet.",
+    "source": "notion"
+  },
+  {
+    "word": "Erwähnen",
+    "meaning": "To mention",
+    "example": "Er hat das gerade erwähnt.",
+    "source": "notion"
+  },
+  {
+    "word": "Versehentlich",
+    "meaning": "Accidentally",
+    "example": "Die Katze hat versehentlich meinen Arm gekratzt.",
+    "source": "notion"
+  },
+  {
+    "word": "Auftritt",
+    "meaning": "Appearance / Gig / Performance",
+    "example": "Sein überzeugender Auftritt.",
+    "source": "notion"
+  },
+  {
+    "word": "Rasant",
+    "meaning": "Rapid / Fast",
+    "example": "Rasanter technologischer Fortschritt.",
+    "source": "notion"
+  },
+  {
+    "word": "Am Ball bleiben",
+    "meaning": "To stay on the ball / keep at it",
+    "example": "Du musst am Ball bleiben!",
+    "source": "notion"
+  },
+  {
+    "word": "Erfindungsreich",
+    "meaning": "Inventive / Ingenious",
+    "example": "Er ist sehr erfindungsreich.",
+    "source": "notion"
+  },
+  {
+    "word": "Fruchtbar",
+    "meaning": "Fruitful / Fertile",
+    "example": "Das war eine fruchtbare Diskussion.",
+    "source": "notion"
+  },
+  {
+    "word": "Letztendlich",
+    "meaning": "Ultimately / In the end",
+    "example": "Letztendlich ist die Entscheidung bei dir.",
+    "source": "notion"
+  },
+  {
+    "word": "Fernmündlich",
+    "meaning": "By telephone",
+    "example": "Ich hab das fernmündlich mitgeteilt.",
+    "source": "notion"
+  },
+  {
+    "word": "Abschätzen",
+    "meaning": "To assess / estimate",
+    "example": "Kannst du es abschätzen?",
+    "source": "notion"
+  },
+  {
+    "word": "Auswerten",
+    "meaning": "To evaluate / analyze",
+    "example": "Werte die Fragebögen aus.",
+    "source": "notion"
+  },
+  {
+    "word": "Niederschwellig",
+    "meaning": "Low-threshold / Accessible",
+    "example": "Der Anfrageprozess muss niederschwellig sein.",
+    "source": "notion"
+  },
+  {
+    "word": "Handlungsbedarf",
+    "meaning": "Need for action",
+    "example": "Es gibt dringenden Handlungsbedarf.",
+    "source": "notion"
+  },
+  {
+    "word": "Wesentlich",
+    "meaning": "Essential / Significant",
+    "example": "Kommunikation spielt eine wesentliche Rolle.",
+    "source": "notion"
+  },
+  {
+    "word": "Angemessen",
+    "meaning": "Appropriate / Reasonable",
+    "example": "6 Wochen Vorlauf ist angemessen.",
+    "source": "notion"
+  },
+  {
+    "word": "Zukommen lassen",
+    "meaning": "To send (formal)",
+    "example": "Ich lasse Ihnen sofort die Präsentation zukommen.",
+    "source": "notion"
+  },
+  {
+    "word": "Aufheben",
+    "meaning": "To keep safely / to lift",
+    "example": "Bitte heben Sie die Quittung gut auf.",
+    "source": "notion"
+  },
+  {
+    "word": "Begreifen",
+    "meaning": "To comprehend / grasp",
+    "example": "Ich begreife das nicht.",
+    "source": "notion"
+  },
+  {
+    "word": "Ergreifen",
+    "meaning": "To seize / capture",
+    "example": "Er ergriff die Gelegenheit.",
+    "source": "notion"
+  },
+  {
+    "word": "Zugreifen",
+    "meaning": "To access / take",
+    "example": "Ich kann auf die Datei zugreifen.",
+    "source": "notion"
+  },
+  {
+    "word": "Aufgreifen",
+    "meaning": "To pick up (a topic)",
+    "example": "Die ESA hat das Thema aufgegriffen.",
+    "source": "notion"
+  },
+  {
+    "word": "Angreifen",
+    "meaning": "To attack",
+    "example": "Niemals persönlich angreifen.",
+    "source": "notion"
+  },
+  {
+    "word": "Rasch",
+    "meaning": "Prompt / Quick",
+    "example": "Herzlichen Dank für die rasche Rückmeldung.",
+    "source": "notion"
+  },
+  {
+    "word": "Gegenwart",
+    "meaning": "Present / Presence",
+    "example": "Die Gegenwart seines Hundes beruhigte ihn.",
+    "source": "notion"
+  },
+  {
+    "word": "Mangel",
+    "meaning": "Scarcity / Lack",
+    "example": "Mangelnde Ressourcen sind ein Problem.",
+    "source": "notion"
+  },
+  {
+    "word": "Mehr Schein als Sein",
+    "meaning": "More appearance than substance",
+    "example": "Der Typ trägt teure Klamotten — mehr Schein als Sein.",
+    "source": "notion"
+  },
+  {
+    "word": "Heilige Kuh",
+    "meaning": "Sacred cow (untouchable topic)",
+    "example": "Urlaub ist eine heilige Kuh in der ZV.",
+    "source": "notion"
+  },
+  {
+    "word": "Angepisst",
+    "meaning": "Pissed off / Angry (colloquial)",
+    "example": "Er ist total angepisst.",
+    "source": "notion"
+  },
+  {
+    "word": "Unannehmlichkeiten",
+    "meaning": "Inconveniences",
+    "example": "Bitte entschuldigen Sie die Unannehmlichkeiten.",
+    "source": "notion"
+  },
+  {
+    "word": "Katzensprung",
+    "meaning": "A stone's throw away (lit. cat's jump)",
+    "example": "Unser Standort ist nur einen Katzensprung entfernt.",
+    "source": "notion"
+  },
+  {
+    "word": "Ungern",
+    "meaning": "Reluctantly / Not gladly",
+    "example": "Ich möchte ungern über den Preis verhandeln.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Lustig",
+    "meaning": "Funny / Amusing",
+    "example": "Der Film war sehr lustig.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Komisch",
+    "meaning": "Strange or funny",
+    "example": "Das ist ein bisschen komisch.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Mutmaßlich",
+    "meaning": "Presumed / Alleged",
+    "example": "Der mutmaßliche Täter wurde verhaftet.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Nüchtern",
+    "meaning": "Sober; factual / dry",
+    "example": "Er ist seit einem Jahr nüchtern.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Angesagt",
+    "meaning": "Trendy / Announced",
+    "example": "Diese Marke ist gerade total angesagt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Lohnabrechnung",
+    "meaning": "Payslip",
+    "example": "Ich brauche meine Lohnabrechnung für den Antrag.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Lohnnachweis",
+    "meaning": "Proof of income",
+    "example": "Der Vermieter verlangt einen Lohnnachweis.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Beziehungsweise (bzw.)",
+    "meaning": "Respectively / Or rather",
+    "example": "Wir treffen uns am Montag bzw. Dienstag.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Geruch",
+    "meaning": "Smell",
+    "example": "Der Geruch von Kaffee ist angenehm.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Geräusch",
+    "meaning": "Noise / Sound",
+    "example": "Ich habe ein seltsames Geräusch gehört.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Eng",
+    "meaning": "Narrow / Tight",
+    "example": "Die Straße ist sehr eng.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Kommt drauf an",
+    "meaning": "It depends",
+    "example": "Es kommt drauf an, wie viel Zeit du hast.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Es liegt daran",
+    "meaning": "It is because",
+    "example": "Es liegt daran, dass er krank ist.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Bezogen auf",
+    "meaning": "Related to / With reference to",
+    "example": "Bezogen auf das Signal ist das korrekt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Riechen",
+    "meaning": "To smell",
+    "example": "Es riecht nach Feuer.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Laut (Präposition)",
+    "meaning": "According to",
+    "example": "Laut Bericht ist alles in Ordnung.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Ursprünglich",
+    "meaning": "Originally",
+    "example": "Ursprünglich komme ich aus Indien.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Bedarf",
+    "meaning": "Need / Demand",
+    "example": "Es besteht Bedarf an neuen Lösungen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Bezüglich (bzgl.)",
+    "meaning": "Regarding / Concerning",
+    "example": "Bezüglich Ihres Antrags melden wir uns.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Erwischt",
+    "meaning": "Caught",
+    "example": "Ich habe ihn beim Schummeln erwischt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Aufeinanderfolgend",
+    "meaning": "Consecutive",
+    "example": "Die Meetings waren aufeinanderfolgend.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Bedingung",
+    "meaning": "Condition",
+    "example": "Unter dieser Bedingung stimme ich zu.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Bedienung",
+    "meaning": "Operation; waiter / service",
+    "example": "Die Bedienung war freundlich.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Beschränkt",
+    "meaning": "Limited",
+    "example": "Der Zugang ist beschränkt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Eingeschränkt",
+    "meaning": "Restricted",
+    "example": "Seine Möglichkeiten sind eingeschränkt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Vermeiden",
+    "meaning": "To avoid",
+    "example": "Ich versuche Fehler zu vermeiden.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verteidigen",
+    "meaning": "To defend",
+    "example": "Er verteidigt seine Meinung.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verteilen",
+    "meaning": "To distribute",
+    "example": "Wir verteilen die Aufgaben.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Beliebig",
+    "meaning": "Arbitrary / Any given",
+    "example": "Wähle eine beliebige Zahl.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Zufall",
+    "meaning": "Coincidence",
+    "example": "Das war kein Zufall.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verfahren",
+    "meaning": "Method / Process / Procedure",
+    "example": "Das Verfahren ist effizient.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Oberfläche",
+    "meaning": "Surface",
+    "example": "Die Oberfläche ist glatt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Oberflächlich",
+    "meaning": "Superficial",
+    "example": "Die Analyse war oberflächlich.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verzerrung",
+    "meaning": "Distortion",
+    "example": "Es gibt Signalverzerrung.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Entzerrung",
+    "meaning": "Equalization",
+    "example": "Die Entzerrung verbessert das Signal.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Stets",
+    "meaning": "Always (formal)",
+    "example": "Er ist stets pünktlich.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Gering",
+    "meaning": "Small / Low / Minor",
+    "example": "Der Aufwand ist gering.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Freundlicherweise",
+    "meaning": "Kindly",
+    "example": "Er hat mir freundlicherweise geholfen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Spiegeln",
+    "meaning": "To reflect / mirror",
+    "example": "Die Daten spiegeln die Realität wider.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Vergnügen",
+    "meaning": "Pleasure",
+    "example": "Es war mir ein Vergnügen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Atemberaubend",
+    "meaning": "Breathtaking",
+    "example": "Die Aussicht ist atemberaubend.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Beitrag",
+    "meaning": "Contribution",
+    "example": "Sein Beitrag war wichtig.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Betrag",
+    "meaning": "Amount (money)",
+    "example": "Der Betrag ist hoch.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Erfassen",
+    "meaning": "To capture / record",
+    "example": "Wir erfassen die Daten.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verurteilt",
+    "meaning": "Convicted",
+    "example": "Er wurde verurteilt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Sowie",
+    "meaning": "As well as / And also",
+    "example": "Dokumente sowie Berichte sind erlaubt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Zulässig",
+    "meaning": "Permitted / Admissible",
+    "example": "Das ist zulässig.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verwalten",
+    "meaning": "To manage / administer",
+    "example": "Sie verwaltet das System.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verwenden",
+    "meaning": "To use / apply",
+    "example": "Wir verwenden neue Tools.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Aufwerten",
+    "meaning": "To upgrade / enhance",
+    "example": "Das System wurde aufgewertet.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Je … desto",
+    "meaning": "The more … the more",
+    "example": "Je mehr du lernst, desto besser wirst du.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Überlegen (Adj.)",
+    "meaning": "Superior",
+    "example": "Dieses Verfahren ist überlegen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "In Anspruch nehmen",
+    "meaning": "To take up / claim / use",
+    "example": "Das wird Zeit in Anspruch nehmen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Beweisen",
+    "meaning": "To prove",
+    "example": "Er will etwas beweisen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Außergewöhnlich",
+    "meaning": "Extraordinary",
+    "example": "Das Ergebnis ist außergewöhnlich.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Durchdrehen",
+    "meaning": "To go crazy / freak out",
+    "example": "Er ist komplett durchgedreht.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Ausgezeichnet",
+    "meaning": "Excellent",
+    "example": "Das Essen war ausgezeichnet.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Belastbarkeit",
+    "meaning": "Resilience / Load capacity",
+    "example": "Belastbarkeit ist wichtig im Job.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Nachhaken",
+    "meaning": "To follow up / probe further",
+    "example": "Ich hake nochmal nach.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Eigentümer",
+    "meaning": "Owner",
+    "example": "Der Eigentümer wohnt hier.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Zumutbar",
+    "meaning": "Reasonable / Acceptable to ask",
+    "example": "Das ist zumutbar.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Gewalt",
+    "meaning": "Power / Violence / Force",
+    "example": "Gewalt ist verboten.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Gewaltenteilung",
+    "meaning": "Separation of powers",
+    "example": "Gewaltenteilung ist wichtig in der Demokratie.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Gegenseitig",
+    "meaning": "Mutual / Reciprocal",
+    "example": "Wir helfen uns gegenseitig.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Begehen",
+    "meaning": "To commit (a crime)",
+    "example": "Er hat ein Verbrechen begangen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verstoßen",
+    "meaning": "To violate / breach",
+    "example": "Er verstößt gegen das Gesetz.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Allerdings",
+    "meaning": "However / Nevertheless",
+    "example": "Das ist gut, allerdings teuer.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verhandlung",
+    "meaning": "Negotiation / Trial",
+    "example": "Die Verhandlung war erfolgreich.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verhandeln",
+    "meaning": "To negotiate",
+    "example": "Wir verhandeln den Vertrag.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Verhandlungssicher",
+    "meaning": "Business fluent (language)",
+    "example": "Mein Deutsch ist verhandlungssicher.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Zunehmend",
+    "meaning": "Increasingly / Growing",
+    "example": "Die Nachfrage ist zunehmend.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Abnehmend",
+    "meaning": "Decreasing",
+    "example": "Die Qualität ist abnehmend.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Zunächst",
+    "meaning": "Initially / First of all",
+    "example": "Zunächst analysieren wir das Problem.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Zusätzlich",
+    "meaning": "Additionally",
+    "example": "Zusätzlich brauchen wir Daten.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Zuerst",
+    "meaning": "First",
+    "example": "Zuerst essen wir, dann arbeiten wir.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Aus Versehen",
+    "meaning": "By mistake / Accidentally",
+    "example": "Ich habe aus Versehen die Datei gelöscht.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Vitamin B",
+    "meaning": "Networking / Connections (colloquial)",
+    "example": "Er hat den Job durch Vitamin B bekommen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Ich gehe davon aus, dass",
+    "meaning": "I assume that / I take it that",
+    "example": "Ich gehe davon aus, dass er kommt.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Vom Matrosen zum Milliardär",
+    "meaning": "Rags to riches",
+    "example": "Seine Geschichte ist vom Matrosen zum Milliardär.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Man soll aufhören, wenn es am schönsten ist",
+    "meaning": "Quit while you're ahead",
+    "example": "Wir gehen jetzt — man soll aufhören, wenn es am schönsten ist.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Ich mache nur Spaß",
+    "meaning": "I'm just joking",
+    "example": "Ich mache nur Spaß, entspann dich.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Man sieht sich",
+    "meaning": "See you / See you around",
+    "example": "Okay, man sieht sich!",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Ich bedanke mich",
+    "meaning": "I thank you (formal)",
+    "example": "Ich bedanke mich für Ihre Hilfe.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Bloß nicht scheitern",
+    "meaning": "Must not fail",
+    "example": "Das ist wichtig — bloß nicht scheitern!",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Blödsinn",
+    "meaning": "Nonsense",
+    "example": "Das ist doch Blödsinn!",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Tja",
+    "meaning": "Well / What can you do (resigned)",
+    "example": "Der Zug ist spät — tja.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Wie ist das nur möglich",
+    "meaning": "How is that even possible?",
+    "example": "Wie ist das nur möglich?",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Mit freundlicher Genehmigung",
+    "meaning": "With kind permission / Courtesy of",
+    "example": "Foto mit freundlicher Genehmigung von Siemens.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Jemanden vor den Kopf stoßen",
+    "meaning": "To offend / snub someone",
+    "example": "Er hat sie vor den Kopf gestoßen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Runtergeschmissen",
+    "meaning": "Thrown down / Dropped / Crashed",
+    "example": "Er hat das Glas runtergeschmissen.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "Untergeschoss",
+    "meaning": "Basement / Underground floor",
+    "example": "Das Büro ist im Untergeschoss.",
+    "source": "chatgpt"
+  },
+  {
+    "word": "eindeutig",
+    "meaning": "clear/unequivocal",
+    "example": "Es ist eindeutig, dass das Unternehmen sein Image aufpolieren möchte.\nDie Fingerabdrücke waren ein eindeutiger Beweis.",
+    "source": "custom"
+  }
+]

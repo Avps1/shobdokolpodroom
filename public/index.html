@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Shobdokolpodroom ✦</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    :root {
+      --gold: #b8940a;
+      --gold-light: #f5e6a0;
+      --gold-dim: rgba(255,215,0,0.08);
+      --green: #4a8a5a;
+      --green-light: #8cc8a0;
+      --bg: #0a0a0f;
+      --bg2: #0d1117;
+      --text: #e8e0d0;
+      --text-dim: #888;
+      --border: rgba(255,215,0,0.12);
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--bg) 0%, var(--bg2) 50%, #0a0f0a 100%);
+      color: var(--text);
+      font-family: Georgia, 'Times New Roman', serif;
+      min-height: 100vh;
+      min-height: 100dvh;
+      overflow-x: hidden;
+    }
+
+    /* Subtle grid background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,215,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,215,0,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    #app { position: relative; z-index: 1; max-width: 520px; margin: 0 auto; }
+
+    /* HEADER */
+    header {
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid rgba(255,215,0,0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .title-block .subtitle { font-size: 10px; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; margin-bottom: 3px; }
+    header .title-block h1 { font-size: 20px; color: var(--gold-light); letter-spacing: 0.04em; }
+    header .stats { text-align: right; }
+    header .stats .total { font-size: 14px; font-weight: bold; color: var(--gold-light); }
+    header .stats .breakdown { font-size: 10px; color: #555; }
+
+    /* NAV */
+    nav { display: flex; border-bottom: 1px solid rgba(255,215,0,0.08); }
+    nav button {
+      flex: 1; padding: 12px 4px; background: none; border: none;
+      color: #666; border-bottom: 2px solid transparent;
+      cursor: pointer; font-size: 11px; letter-spacing: 0.12em;
+      text-transform: uppercase; font-family: Georgia, serif;
+      transition: color 0.2s;
+    }
+    nav button.active { color: var(--gold-light); border-bottom-color: var(--gold); }
+
+    /* VIEWS */
+    .view { display: none; padding: 16px 18px; }
+    .view.active { display: block; }
+
+    /* FILTER CHIPS */
+    .filters { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 12px; align-items: center; }
+    .chip {
+      padding: 4px 10px; border-radius: 20px; font-size: 10px;
+      background: var(--gold-dim); color: var(--text-dim);
+      border: 1px solid rgba(255,215,0,0.1); cursor: pointer;
+      font-family: Georgia, serif; transition: all 0.15s;
+    }
+    .chip.active { background: var(--gold); color: #0a0a0f; border-color: var(--gold); }
+
+    /* PROGRESS */
+    .progress-bar { height: 3px; background: rgba(255,215,0,0.08); border-radius: 2px; margin-bottom: 16px; overflow: hidden; }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; transition: width 0.5s; }
+
+    /* CARD */
+    .card-counter { font-size: 11px; color: #555; text-align: right; margin-bottom: 8px; }
+    .card {
+      min-height: 220px; border-radius: 16px; cursor: pointer;
+      padding: 28px 22px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; gap: 10px;
+      transition: background 0.3s, border-color 0.3s, transform 0.15s, opacity 0.15s;
+      user-select: none; -webkit-user-select: none;
+    }
+    .card.front {
+      background: linear-gradient(135deg, #1a1409, #120e04);
+      border: 1px solid rgba(255,215,0,0.15);
+    }
+    .card.back {
+      background: linear-gradient(135deg, #0d1f0d, #0a180a);
+      border: 1px solid rgba(100,200,100,0.2);
+    }
+    .card.flipping { transform: scaleX(0.94); opacity: 0.6; }
+    .card .card-label { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; }
+    .card.front .card-label { color: var(--gold); }
+    .card.back .card-label { color: var(--green-light); }
+    .card .card-word { font-size: 28px; font-weight: bold; color: var(--gold-light); line-height: 1.25; }
+    .card .card-meaning { font-size: 20px; font-weight: bold; color: #e8f5e8; line-height: 1.3; }
+    .card .card-divider { width: 36px; height: 1px; background: rgba(100,200,100,0.3); }
+    .card .card-example { font-size: 13px; color: #8aaa90; font-style: italic; line-height: 1.5; max-width: 290px; }
+    .card .card-hint { font-size: 11px; color: #444; margin-top: 4px; }
+    .badge-custom { font-size: 9px; color: var(--green-light); letter-spacing: 0.2em; text-transform: uppercase; }
+
+    /* ACTION BUTTONS */
+    .actions { display: flex; gap: 12px; margin-top: 14px; }
+    .btn {
+      flex: 1; padding: 14px; border-radius: 12px; border: none;
+      font-size: 13px; cursor: pointer; letter-spacing: 0.1em;
+      font-family: Georgia, serif; transition: opacity 0.15s;
+    }
+    .btn:active { opacity: 0.7; }
+    .btn-wrong { background: rgba(200,80,80,0.1); border: 1px solid rgba(200,80,80,0.2); color: #cc8855; }
+    .btn-right { background: rgba(80,200,80,0.1); border: 1px solid rgba(80,200,80,0.2); color: #88cc88; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), #8a6c06);
+      color: #0a0a0f; font-weight: bold; flex: none; width: 100%; margin-top: 4px;
+    }
+
+    /* SESSION STATS */
+    .session-stats {
+      margin-top: 14px; padding: 12px; border-radius: 10px;
+      background: rgba(255,215,0,0.04); border: 1px solid rgba(255,215,0,0.06);
+      display: flex; justify-content: space-around;
+    }
+    .stat { text-align: center; }
+    .stat-val { font-size: 20px; font-weight: bold; }
+    .stat-lbl { font-size: 9px; color: #555; letter-spacing: 0.1em; }
+
+    /* FORM */
+    .form-section h2 { font-size: 11px; color: var(--gold); letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 6px; }
+    .form-divider { height: 1px; background: rgba(255,215,0,0.1); margin-bottom: 16px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 10px; color: #777; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 5px; }
+    .form-group input, .form-group textarea {
+      width: 100%; padding: 10px 12px; border-radius: 8px;
+      background: rgba(255,215,0,0.04); border: 1px solid var(--border);
+      color: var(--text); font-size: 14px; outline: none;
+      font-family: Georgia, serif; resize: vertical;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-color: rgba(255,215,0,0.3); }
+
+    /* CUSTOM WORDS LIST in Add tab */
+    .custom-list { margin-top: 22px; }
+    .custom-list h3 { font-size: 10px; color: #555; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 10px; }
+    .custom-item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 10px 12px; margin-bottom: 6px; border-radius: 8px;
+      background: rgba(80,200,80,0.04); border: 1px solid rgba(80,200,80,0.08);
+    }
+    .custom-item-text .word { font-size: 14px; color: #e8f5e8; }
+    .custom-item-text .meaning { font-size: 11px; color: #6a9a70; }
+    .btn-delete {
+      background: rgba(200,60,60,0.15); border: 1px solid rgba(200,60,60,0.2);
+      color: #cc6666; border-radius: 6px; padding: 4px 10px;
+      cursor: pointer; font-size: 12px; flex-shrink: 0;
+    }
+
+    /* SEARCH + LIST */
+    .search-input {
+      width: 100%; padding: 10px 14px; border-radius: 10px; margin-bottom: 12px;
+      background: rgba(255,215,0,0.04); border: 1px solid var(--border);
+      color: var(--text); font-size: 13px; outline: none;
+      font-family: Georgia, serif;
+    }
+    .list-count { font-size: 10px; color: #555; letter-spacing: 0.1em; margin-bottom: 10px; }
+    .list-item {
+      padding: 11px 14px; margin-bottom: 5px; border-radius: 10px;
+      background: rgba(255,215,0,0.03); border: 1px solid rgba(255,215,0,0.07);
+    }
+    .list-item.custom { background: rgba(80,200,80,0.03); border-color: rgba(80,200,80,0.09); }
+    .list-item .lword { font-size: 15px; color: var(--gold-light); font-weight: bold; }
+    .list-item .lmeaning { font-size: 12px; color: #8a9a80; margin-top: 2px; }
+    .list-item .lexample { font-size: 11px; color: #556655; font-style: italic; margin-top: 3px; }
+    .badge { font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; margin-left: 7px; }
+    .badge-n { color: var(--gold); }
+    .badge-c { color: var(--green-light); }
+    .badge-g { color: #7ab; }
+
+    /* TOAST */
+    #toast {
+      position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+      background: #1a3a1a; border: 1px solid #4a8a5a; color: #88cc88;
+      padding: 8px 20px; border-radius: 20px; font-size: 13px;
+      z-index: 1000; letter-spacing: 0.1em;
+      opacity: 0; transition: opacity 0.3s; pointer-events: none;
+    }
+    #toast.show { opacity: 1; }
+
+    /* Empty state */
+    .empty { text-align: center; color: #444; font-size: 13px; padding: 40px 0; font-style: italic; }
+
+    /* Tribute banner */
+    .tribute {
+      border-bottom: 1px solid rgba(255,215,0,0.1);
+      display: flex; align-items: center; gap: 14px;
+      padding: 12px 18px; background: rgba(255,215,0,0.02);
+      cursor: pointer;
+    }
+    .tribute img {
+      width: 54px; height: 54px; object-fit: cover;
+      border-radius: 8px; border: 1px solid rgba(255,215,0,0.15);
+      flex-shrink: 0;
+    }
+    .tribute-text .tribute-label { font-size: 9px; color: #555; letter-spacing: 0.2em; text-transform: uppercase; }
+    .tribute-text .tribute-title { font-size: 13px; color: var(--gold-light); line-height: 1.4; }
+    .tribute-text .tribute-sub { font-size: 10px; color: #666; font-style: italic; margin-top: 1px; }
+    .tribute-expanded {
+      padding: 0 18px 14px; display: none;
+      background: rgba(255,215,0,0.02); border-bottom: 1px solid rgba(255,215,0,0.08);
+    }
+    .tribute-expanded.open { display: block; }
+    .tribute-expanded img { width: 100%; border-radius: 10px; border: 1px solid rgba(255,215,0,0.12); }
+  </style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="title-block">
+      <div class="subtitle">Deutsch Lernen</div>
+      <h1>Shobdokolpodroom ✦</h1>
+    </div>
+    <div class="stats">
+      <div class="total" id="total-count">… Wörter</div>
+      <div class="breakdown" id="breakdown"></div>
+    </div>
+  </header>
+
+  <!-- Tribute to Sukumar Ray -->
+  <div class="tribute" onclick="document.getElementById('tribute-expanded').classList.toggle('open')">
+    <img src="/shobdokolpodroom_ray.png" alt="Shobdokolpodroom by Sukumar Ray" onerror="this.style.display='none'" />
+    <div class="tribute-text">
+      <div class="tribute-label">একটি শ্রদ্ধাঞ্জলি · A Tribute</div>
+      <div class="tribute-title">শব্দকল্পদ্রুম — Sukumar Ray (1887–1923)</div>
+      <div class="tribute-sub">Tap to see the poem · tippen zum Lesen</div>
+    </div>
+  </div>
+  <div class="tribute-expanded" id="tribute-expanded">
+    <img src="/shobdokolpodroom_ray.png" alt="Shobdokolpodroom by Sukumar Ray" onerror="this.style.display='none'" />
+  </div>
+
+  <nav>
+    <button class="active" data-view="practice">🃏 Üben</button>
+    <button data-view="add">✚ Neu</button>
+    <button data-view="list">📚 Liste</button>
+  </nav>
+
+  <!-- PRACTICE VIEW -->
+  <div class="view active" id="view-practice">
+    <div class="filters" id="filter-chips"></div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    <div class="card-counter" id="card-counter">1 / 0</div>
+    <div class="card front" id="flashcard">
+      <div class="card-label">Laden…</div>
+    </div>
+    <div class="actions">
+      <button class="btn btn-wrong" id="btn-wrong">✗ Nochmal</button>
+      <button class="btn btn-right" id="btn-right">✓ Gewusst!</button>
+    </div>
+    <div class="session-stats">
+      <div class="stat"><div class="stat-val" id="stat-seen" style="color:var(--gold-light)">0</div><div class="stat-lbl">GESEHEN</div></div>
+      <div class="stat"><div class="stat-val" id="stat-known" style="color:#88cc88">0</div><div class="stat-lbl">GEWUSST</div></div>
+      <div class="stat"><div class="stat-val" id="stat-pct" style="color:var(--gold)">0%</div><div class="stat-lbl">FORTSCHRITT</div></div>
+    </div>
+  </div>
+
+  <!-- ADD VIEW -->
+  <div class="view" id="view-add">
+    <div class="form-section">
+      <h2>Neues Wort hinzufügen</h2>
+      <div class="form-divider"></div>
+      <div class="form-group">
+        <label>Deutsches Wort *</label>
+        <input type="text" id="inp-word" placeholder="z.B. Flüchtigkeitsfehler" />
+      </div>
+      <div class="form-group">
+        <label>Bedeutung *</label>
+        <input type="text" id="inp-meaning" placeholder="z.B. Careless mistake / Slip" />
+      </div>
+      <div class="form-group">
+        <label>Beispielsatz</label>
+        <textarea id="inp-example" rows="2" placeholder="z.B. Das war nur ein Flüchtigkeitsfehler."></textarea>
+      </div>
+      <button class="btn btn-primary" id="btn-add">✚ Wort speichern</button>
+    </div>
+    <div class="custom-list" id="custom-list"></div>
+  </div>
+
+  <!-- LIST VIEW -->
+  <div class="view" id="view-list">
+    <input class="search-input" id="search-input" placeholder="Suchen… z.B. 'negotiate' oder 'verhandeln'" />
+    <div class="list-count" id="list-count"></div>
+    <div id="word-list"></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+  // ── State ─────────────────────────────────────────────────────────────────
+  let allWords = [];
+  let deck = [];
+  let deckIndex = 0;
+  let isFlipped = false;
+  let knownSet = new Set();
+  let sessionSeen = 0;
+  let sessionKnown = 0;
+  let activeFilter = 'all';
+
+  // ── Fetch words from server ────────────────────────────────────────────────
+  async function loadWords() {
+    const res = await fetch('/api/words');
+    allWords = await res.json();
+    updateHeader();
+    buildDeck();
+    renderCustomList();
+    renderList();
+  }
+
+  // ── Header ─────────────────────────────────────────────────────────────────
+  function updateHeader() {
+    const n = allWords.length;
+    const notion = allWords.filter(w => w.source === 'notion').length;
+    const chatgpt = allWords.filter(w => w.source === 'chatgpt').length;
+    const custom = allWords.filter(w => w.source === 'custom').length;
+    document.getElementById('total-count').textContent = n + ' Wörter';
+    document.getElementById('breakdown').textContent = notion + ' Notion · ' + chatgpt + ' ChatGPT · ' + custom + ' eigene';
+    buildFilterChips(notion, chatgpt, custom);
+  }
+
+  // ── Filter chips ───────────────────────────────────────────────────────────
+  function buildFilterChips(notion, chatgpt, custom) {
+    const filters = [
+      { key: 'all', label: 'Alle (' + allWords.length + ')' },
+      { key: 'notion', label: 'Notion (' + notion + ')' },
+      { key: 'chatgpt', label: 'ChatGPT (' + chatgpt + ')' },
+      { key: 'custom', label: 'Eigene (' + custom + ')' },
+    ];
+    const container = document.getElementById('filter-chips');
+    container.innerHTML = '';
+    filters.forEach(f => {
+      const btn = document.createElement('button');
+      btn.className = 'chip' + (f.key === activeFilter ? ' active' : '');
+      btn.textContent = f.label;
+      btn.onclick = () => { activeFilter = f.key; buildDeck(); buildFilterChips(notion, chatgpt, custom); };
+      container.appendChild(btn);
+    });
+  }
+
+  // ── Deck ───────────────────────────────────────────────────────────────────
+  function buildDeck() {
+    let words = allWords;
+    if (activeFilter === 'notion') words = allWords.filter(w => w.source === 'notion');
+    else if (activeFilter === 'chatgpt') words = allWords.filter(w => w.source === 'chatgpt');
+    else if (activeFilter === 'custom') words = allWords.filter(w => w.source === 'custom');
+    deck = shuffle([...words]);
+    deckIndex = 0;
+    isFlipped = false;
+    knownSet = new Set();
+    sessionSeen = 0;
+    sessionKnown = 0;
+    renderCard();
+    updateStats();
+  }
+
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  // ── Card render ────────────────────────────────────────────────────────────
+  function renderCard() {
+    const card = document.getElementById('flashcard');
+    const counter = document.getElementById('card-counter');
+
+    if (!deck.length) {
+      card.innerHTML = '<div class="card-label">Keine Wörter</div>';
+      counter.textContent = '0 / 0';
+      return;
+    }
+
+    counter.textContent = (deckIndex + 1) + ' / ' + deck.length;
+    const w = deck[deckIndex];
+
+    if (!isFlipped) {
+      card.className = 'card front';
+      card.innerHTML = `
+        <div class="card-label">Was bedeutet…</div>
+        <div class="card-word">${w.word}</div>
+        ${w.source === 'custom' ? '<div class="badge-custom">★ Eigenes Wort</div>' : ''}
+        <div class="card-hint">Tippen zum Aufdecken</div>
+      `;
+    } else {
+      card.className = 'card back';
+      card.innerHTML = `
+        <div class="card-label">Bedeutung</div>
+        <div class="card-meaning">${w.meaning}</div>
+        ${w.example ? `<div class="card-divider"></div><div class="card-example">„${w.example}"</div>` : ''}
+      `;
+    }
+
+    const pct = deck.length ? (knownSet.size / deck.length * 100).toFixed(0) : 0;
+    document.getElementById('progress-fill').style.width = pct + '%';
+  }
+
+  function flipCard() {
+    const card = document.getElementById('flashcard');
+    card.classList.add('flipping');
+    setTimeout(() => {
+      isFlipped = !isFlipped;
+      renderCard();
+      card.classList.remove('flipping');
+    }, 150);
+  }
+
+  function advance(markKnown) {
+    if (markKnown && deck[deckIndex]) {
+      knownSet.add(deck[deckIndex].word);
+      sessionKnown++;
+    }
+    sessionSeen++;
+    isFlipped = false;
+    deckIndex = (deckIndex + 1) % deck.length;
+    updateStats();
+    renderCard();
+  }
+
+  function updateStats() {
+    const pct = deck.length ? (knownSet.size / deck.length * 100).toFixed(0) : 0;
+    document.getElementById('stat-seen').textContent = sessionSeen;
+    document.getElementById('stat-known').textContent = sessionKnown;
+    document.getElementById('stat-pct').textContent = pct + '%';
+  }
+
+  // ── Add word ───────────────────────────────────────────────────────────────
+  document.getElementById('btn-add').onclick = async () => {
+    const word = document.getElementById('inp-word').value.trim();
+    const meaning = document.getElementById('inp-meaning').value.trim();
+    const example = document.getElementById('inp-example').value.trim();
+    if (!word || !meaning) { showToast('⚠ Wort und Bedeutung sind Pflicht!'); return; }
+    const res = await fetch('/api/words', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ word, meaning, example })
+    });
+    if (res.ok) {
+      document.getElementById('inp-word').value = '';
+      document.getElementById('inp-meaning').value = '';
+      document.getElementById('inp-example').value = '';
+      await loadWords();
+      showToast('✓ Gespeichert!');
+    }
+  };
+
+  // ── Delete word ────────────────────────────────────────────────────────────
+  async function deleteWord(idx) {
+    const res = await fetch('/api/words/' + idx, { method: 'DELETE' });
+    if (res.ok) { await loadWords(); showToast('✕ Gelöscht'); }
+  }
+
+  // ── Custom list ────────────────────────────────────────────────────────────
+  function renderCustomList() {
+    const customs = allWords.map((w, i) => ({ ...w, idx: i })).filter(w => w.source === 'custom');
+    const container = document.getElementById('custom-list');
+    if (!customs.length) { container.innerHTML = ''; return; }
+    container.innerHTML = '<h3>Eigene Wörter (' + customs.length + ')</h3>';
+    customs.forEach(w => {
+      const div = document.createElement('div');
+      div.className = 'custom-item';
+      div.innerHTML = `
+        <div class="custom-item-text">
+          <div class="word">${w.word}</div>
+          <div class="meaning">${w.meaning}</div>
+        </div>
+        <button class="btn-delete" onclick="deleteWord(${w.idx})">✕</button>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  // ── Word list ──────────────────────────────────────────────────────────────
+  function renderList(query = '') {
+    const q = query.toLowerCase();
+    const filtered = allWords.filter(w =>
+      w.word.toLowerCase().includes(q) || w.meaning.toLowerCase().includes(q)
+    );
+    document.getElementById('list-count').textContent = filtered.length + ' Wörter gefunden';
+    const container = document.getElementById('word-list');
+    if (!filtered.length) { container.innerHTML = '<div class="empty">Keine Wörter gefunden</div>'; return; }
+    container.innerHTML = filtered.map(w => `
+      <div class="list-item ${w.source === 'custom' ? 'custom' : ''}">
+        <span class="lword">${w.word}</span>
+        <span class="badge ${w.source === 'notion' ? 'badge-n' : w.source === 'chatgpt' ? 'badge-g' : 'badge-c'}">
+          ${w.source === 'notion' ? '◆ Notion' : w.source === 'chatgpt' ? '◇ ChatGPT' : '★ eigenes'}
+        </span>
+        <div class="lmeaning">${w.meaning}</div>
+        ${w.example ? `<div class="lexample">„${w.example}"</div>` : ''}
+      </div>
+    `).join('');
+  }
+
+  document.getElementById('search-input').oninput = e => renderList(e.target.value);
+
+  // ── Navigation ─────────────────────────────────────────────────────────────
+  document.querySelectorAll('nav button').forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('view-' + btn.dataset.view).classList.add('active');
+    };
+  });
+
+  // ── Card interactions ──────────────────────────────────────────────────────
+  document.getElementById('flashcard').onclick = flipCard;
+  document.getElementById('btn-wrong').onclick = () => advance(false);
+  document.getElementById('btn-right').onclick = () => advance(true);
+
+  // Keyboard support
+  document.addEventListener('keydown', e => {
+    if (e.key === ' ' || e.key === 'ArrowUp' || e.key === 'ArrowDown') { e.preventDefault(); flipCard(); }
+    if (e.key === 'ArrowLeft') advance(false);
+    if (e.key === 'ArrowRight') advance(true);
+  });
+
+  // ── Toast ──────────────────────────────────────────────────────────────────
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2200);
+  }
+
+  // ── Init ───────────────────────────────────────────────────────────────────
+  loadWords();
+</script>
+</body>
+</html>
